@@ -17,6 +17,8 @@
 		95663A2A20DB7EB800BD8617 /* RGBAColorFromString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95663A2020DB7EB800BD8617 /* RGBAColorFromString.swift */; };
 		95663A2B20DB7EB800BD8617 /* PickFlavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95663A2220DB7EB800BD8617 /* PickFlavorViewController.swift */; };
 		95663A2C20DB7EB800BD8617 /* PickFlavorDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95663A2320DB7EB800BD8617 /* PickFlavorDataSource.swift */; };
+		98654A202A00F29100E35C6A /* ConePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98654A1F2A00F29100E35C6A /* ConePickerController.swift */; };
+		98654A232A00F2BC00E35C6A /* RWPickSizeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98654A222A00F2BC00E35C6A /* RWPickSizeController.swift */; };
 		E2239186498EF1DD67A1E8BD /* libPods-RWPickFlavor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2784BD81AA348B6F9D9F5724 /* libPods-RWPickFlavor.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +38,8 @@
 		95663A2020DB7EB800BD8617 /* RGBAColorFromString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBAColorFromString.swift; sourceTree = "<group>"; };
 		95663A2220DB7EB800BD8617 /* PickFlavorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickFlavorViewController.swift; sourceTree = "<group>"; };
 		95663A2320DB7EB800BD8617 /* PickFlavorDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickFlavorDataSource.swift; sourceTree = "<group>"; };
+		98654A1F2A00F29100E35C6A /* ConePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConePickerController.swift; sourceTree = "<group>"; };
+		98654A222A00F2BC00E35C6A /* RWPickSizeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RWPickSizeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 		95663A0020DB7E4D00BD8617 = {
 			isa = PBXGroup;
 			children = (
+				98654A212A00F29E00E35C6A /* RWPickSize */,
+				98654A1E2A00F26F00E35C6A /* RWPickCone */,
 				95663A0C20DB7E4D00BD8617 /* RWPickFlavor */,
 				95663A0B20DB7E4D00BD8617 /* Products */,
 				9FF54199CF5C132FDAE06268 /* Pods */,
@@ -126,6 +132,22 @@
 				95663A2320DB7EB800BD8617 /* PickFlavorDataSource.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		98654A1E2A00F26F00E35C6A /* RWPickCone */ = {
+			isa = PBXGroup;
+			children = (
+				98654A1F2A00F29100E35C6A /* ConePickerController.swift */,
+			);
+			path = RWPickCone;
+			sourceTree = "<group>";
+		};
+		98654A212A00F29E00E35C6A /* RWPickSize */ = {
+			isa = PBXGroup;
+			children = (
+				98654A222A00F2BC00E35C6A /* RWPickSizeController.swift */,
+			);
+			path = RWPickSize;
 			sourceTree = "<group>";
 		};
 		9FF54199CF5C132FDAE06268 /* Pods */ = {
@@ -248,10 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98654A232A00F2BC00E35C6A /* RWPickSizeController.swift in Sources */,
 				95663A2420DB7EB800BD8617 /* ScoopCell.swift in Sources */,
 				95663A2C20DB7EB800BD8617 /* PickFlavorDataSource.swift in Sources */,
 				95663A2820DB7EB800BD8617 /* Flavor.swift in Sources */,
 				95663A2A20DB7EB800BD8617 /* RGBAColorFromString.swift in Sources */,
+				98654A202A00F29100E35C6A /* ConePickerController.swift in Sources */,
 				95663A2520DB7EB800BD8617 /* ScoopView.swift in Sources */,
 				95663A2720DB7EB800BD8617 /* IceCreamView.swift in Sources */,
 				95663A2B20DB7EB800BD8617 /* PickFlavorViewController.swift in Sources */,
