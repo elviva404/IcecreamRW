@@ -8,7 +8,7 @@ s.summary = "Rema x Wizkid."
 s.requires_arc = true
 
 # 2
-s.version = "0.1.17"
+s.version = "0.1.18"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -36,6 +36,6 @@ s.resources = "RWPickFlavor/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
 # 10
 s.swift_version = "5.0"
 
-#s.dependency  'RWPickSize', '~> 0.1.13'
+s.dependency  'RWPickSize', '~> 0.1.13'
 
 end
