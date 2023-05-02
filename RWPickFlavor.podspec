@@ -8,7 +8,7 @@ s.summary = "Rema x Wizkid."
 s.requires_arc = true
 
 # 2
-s.version = "0.1.11"
+s.version = "0.1.12"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
@@ -23,9 +23,9 @@ s.homepage = "https://github.com/TheCodedSelf/RWPickFlavor"
 s.source = { :git => "https://github.com/elviva404/IcecreamRW.git", :tag => "#{s.version}" }
 
 # 7
-s.framework = "UIKit"
-s.dependency 'Alamofire', '~> 4.7'
-s.dependency 'MBProgressHUD', '~> 1.1.0'
+# s.framework = "UIKit"
+# s.dependency 'Alamofire', '~> 4.7'
+# s.dependency 'MBProgressHUD', '~> 1.1.0'
 
 # 8
 s.source_files = "RWPickFlavor/**/*.{swift}"
