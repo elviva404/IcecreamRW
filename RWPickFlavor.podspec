@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "RWPickFlavor"
-  spec.version      = "0.0.8"
+  spec.version      = "0.0.10"
   spec.summary      = "Rema x Wizkid."
 
   # This description is used to generate tags and improve search results.
@@ -138,7 +138,7 @@ Pod::Spec.new do |spec|
   # spec.dependency "JSONKit", "~> 1.4"
 
   #spec.framework = "UIKit"
-  #spec.dependency 'Alamofire', '~> 4.7'
-  #spec.dependency 'MBProgressHUD', '~> 1.1.0'
+  spec.dependency 'Alamofire', '~> 4.7'
+  spec.dependency 'MBProgressHUD', '~> 1.1.0'
 
 end
