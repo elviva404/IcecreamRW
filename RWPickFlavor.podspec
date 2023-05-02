@@ -68,7 +68,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
+  spec.ios.deployment_target = "13.0"
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
@@ -94,6 +94,7 @@ Pod::Spec.new do |spec|
   # spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   spec.source_files = "RWPickFlavor/**/*.{swift}"
   spec.exclude_files = "Classes/Exclude"
+  spec.swift_version = "5.0"
 
   # spec.public_header_files = "Classes/**/*.h"
 
