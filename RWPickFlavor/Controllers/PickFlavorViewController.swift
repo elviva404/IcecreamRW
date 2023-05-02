@@ -27,8 +27,8 @@
 /// THE SOFTWARE.
 
 import UIKit
-import Alamofire
-import MBProgressHUD
+//import Alamofire
+//import MBProgressHUD
 
 public class PickFlavorViewController: UIViewController {
   
@@ -63,39 +63,39 @@ public class PickFlavorViewController: UIViewController {
     
     showLoadingHUD()
     
-    Alamofire.request("https://www.raywenderlich.com/downloads/Flavors.plist",
-                      encoding: PropertyListEncoding.xml)
-      .responsePropertyList { [weak self] (response) -> Void in
-        
-        guard let self = self else {
-          return
-        }
-        
-        self.hideLoadingHUD()
-        
-        let flavorsArray: [[String : String]]
-        
-        switch response.result {
-        case .success(let array):
-          flavorsArray = array as? [[String : String]] ?? []
-        case .failure(_):
-          print("Couldn't download flavors!")
-          return
-        }
-        
-        self.flavors = flavorsArray.compactMap(Flavor.init(dictionary:))
-        self.collectionView.reloadData()
-        self.selectFirstFlavor()
-    }
+//    Alamofire.request("https://www.raywenderlich.com/downloads/Flavors.plist",
+//                      encoding: PropertyListEncoding.xml)
+//      .responsePropertyList { [weak self] (response) -> Void in
+//
+//        guard let self = self else {
+//          return
+//        }
+//
+//        self.hideLoadingHUD()
+//
+//        let flavorsArray: [[String : String]]
+//
+//        switch response.result {
+//        case .success(let array):
+//          flavorsArray = array as? [[String : String]] ?? []
+//        case .failure(_):
+//          print("Couldn't download flavors!")
+//          return
+//        }
+//
+//        self.flavors = flavorsArray.compactMap(Flavor.init(dictionary:))
+//        self.collectionView.reloadData()
+//        self.selectFirstFlavor()
+//    }
   }
   
   private func showLoadingHUD() {
-    let hud = MBProgressHUD.showAdded(to: contentView, animated: true)
-    hud.label.text = "Loading..."
+//    let hud = MBProgressHUD.showAdded(to: contentView, animated: true)
+//    hud.label.text = "Loading..."
   }
   
   private func hideLoadingHUD() {
-    MBProgressHUD.hide(for: contentView, animated: true)
+//    MBProgressHUD.hide(for: contentView, animated: true)
   }
   
   private func selectFirstFlavor() {
